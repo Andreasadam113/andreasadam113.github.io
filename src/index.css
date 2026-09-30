@@ -910,6 +910,24 @@ html.custom-cursor * {
   left: var(--gutter);
   width: min(560px, 44vw);
 }
+.about-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.about-photo {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--holo);
+  box-shadow: 0 0 0 4px rgba(98, 240, 230, 0.12), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.is-reader .about-photo {
+  width: 112px;
+  height: 112px;
+}
 .about-role {
   margin: 10px 0 0;
   font-family: var(--f-mono);

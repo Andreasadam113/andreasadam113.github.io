@@ -19,6 +19,8 @@ export const profile = {
     fr: 'Je conçois des outils XR immersifs et les systèmes connectés qui les animent.',
   } satisfies Localized,
   location: { en: 'Ghent, Belgium', nl: 'Gent, België', fr: 'Gand, Belgique' } satisfies Localized,
+  /** Portrait shown next to the name in About (path inside /public). */
+  photo: 'about/andreas.webp',
 
   contact: {
     // Personal address chosen over the student address so it keeps working after graduation.
@@ -29,9 +31,9 @@ export const profile = {
 
   about: {
     shortBio: {
-      en: 'I’m a Multimedia & Creative Technology student at Howest in Ghent, focusing on XR development, with a background in Industrial ICT. Off-screen I play field hockey at a semi-professional level and coach players of all ages — and hockey shows up in my projects too. I’m hard-working, eager to learn, calm under pressure and at my best in a team.',
-      nl: 'Ik studeer Multimedia & Creative Technology aan Howest in Gent, met focus op XR development, en heb een achtergrond in Industriële ICT. Naast het scherm speel ik hockey op semiprofniveau en geef ik training aan spelers van alle leeftijden — en ook in mijn projecten duikt hockey op. Ik ben een harde werker, leergierig, stressbestendig en het sterkst in een team.',
-      fr: 'J’étudie le Multimedia & Creative Technology à la Howest à Gand, avec une spécialisation en développement XR, après une formation en ICT industrielle. En dehors des écrans, je joue au hockey sur gazon à un niveau semi-professionnel et j’entraîne des joueurs de tous âges — et le hockey se retrouve aussi dans mes projets. Travailleur, curieux d’apprendre, résistant au stress, je donne le meilleur de moi-même en équipe.',
+      en: 'I’m a Multimedia & Creative Technology student at Howest in Ghent, focusing on XR development, with a background in Industrial ICT. I play field hockey at a semi-professional level — and hockey shows up in my projects too. I’m hard-working, eager to learn, calm under pressure and at my best in a team.',
+      nl: 'Ik studeer Multimedia & Creative Technology aan Howest in Gent, met focus op XR development, en heb een achtergrond in Industriële ICT. Ik speel hockey op semiprofniveau — en dat zie je ook terug in mijn projecten. Ik ben een harde werker, leergierig, stressbestendig en het sterkst in een team.',
+      fr: 'J’étudie le Multimedia & Creative Technology à la Howest à Gand, avec une spécialisation en développement XR, après une formation en ICT industrielle. Je joue au hockey sur gazon à un niveau semi-professionnel — et cela se voit aussi dans mes projets. Travailleur, curieux d’apprendre, résistant au stress, je donne le meilleur de moi-même en équipe.',
     } as Localized | null,
 
     experience: [
@@ -45,16 +47,8 @@ export const profile = {
           fr: 'Travail sur place au Vietnam avec l’équipe sur le suivi de chantier par IA.',
         },
       },
-      {
-        what: { en: 'Hockey coach (student job)', nl: 'Hockeytrainer (jobstudent)', fr: 'Entraîneur de hockey (job étudiant)' },
-        where: 'Constantia Hockeyclub, Waregem',
-        detail: {
-          en: 'Preparing and leading training sessions for young children and adult players, adapted to age and level; explaining technique and motivating players.',
-          nl: 'Trainingen voorbereiden en geven aan jonge kinderen en volwassen spelers, afgestemd op leeftijd en niveau; technieken uitleggen en spelers motiveren.',
-          fr: 'Préparer et animer des entraînements pour jeunes enfants et joueurs adultes, adaptés à l’âge et au niveau ; expliquer la technique et motiver les joueurs.',
-        },
-      },
-      // (hospitality and shelf-stocking jobs are on the CV but left out here: not relevant for an XR portfolio)
+      // (student jobs — hockey coach, hospitality, shelf-stocking — are on the CV but left out
+      // here: this portfolio is purely about XR)
     ] as AboutEntry[] | null,
 
     education: [
@@ -77,12 +71,10 @@ export const profile = {
       { en: 'Eager to learn', nl: 'Leergierig', fr: 'Curieux d’apprendre' },
       { en: 'Independent', nl: 'Zelfstandig', fr: 'Autonome' },
       { en: 'Stress-resistant', nl: 'Stressbestendig', fr: 'Résistant au stress' },
-      { en: 'Leading a group', nl: 'Een groep leiden', fr: 'Diriger un groupe' },
     ] as Localized[] | null,
 
     interests: [
       { en: 'Field hockey at a semi-professional level', nl: 'Hockey op semiprofniveau', fr: 'Hockey sur gazon à un niveau semi-professionnel' },
-      { en: 'Coaching hockey players of all ages', nl: 'Hockeytraining geven aan alle leeftijden', fr: 'Entraîner des joueurs de hockey de tous âges' },
     ] as Localized[] | null,
 
     languages: [

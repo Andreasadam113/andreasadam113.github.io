@@ -282,10 +282,16 @@ export function AboutOverlay() {
         </div>
         <div className="panel-scroll">
           <p className="eyebrow">{t('about')}</p>
-          <h2 className="detail-title" data-autofocus tabIndex={-1}>
-            {profile.name}
-          </h2>
-          <p className="about-role">{l(profile.role)}</p>
+          {/* portrait next to the name, so visitors see who's behind the avatar */}
+          <div className="about-head">
+            <img className="about-photo" src={`${import.meta.env.BASE_URL}${profile.photo}`} alt={profile.name} width={88} height={88} />
+            <div>
+              <h2 className="detail-title" data-autofocus tabIndex={-1}>
+                {profile.name}
+              </h2>
+              <p className="about-role">{l(profile.role)}</p>
+            </div>
+          </div>
           <p className="about-tagline">{l(profile.tagline)}</p>
           <p className="about-loc">
             <span className="dot" aria-hidden="true" /> {t('location')} {l(profile.location)}
